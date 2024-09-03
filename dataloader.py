@@ -6,7 +6,6 @@ def process_discovery(discovery):
         new_discovery['id'] = discovery['_id']['$oid']
         new_discovery['prompt'] = discovery['prompt']
         new_discovery['view_count'] = discovery['view_count']
-        new_discovery['discoveries'] = []
         new_discovery['language'] = discovery['language']
         new_destinations = []
         for destination in discovery['discoveries']:
@@ -42,7 +41,6 @@ class VooyaiDataloader:
                 self.discoveries.append(clean_discovery)
                 self.destinations.extend(clean_destinations)
 
-            print(len(self.destinations))
             #Now create (and clean) dataframes
             self.discoveries_df = pd.DataFrame(self.discoveries)
             self.destinations_df = pd.DataFrame(self.destinations)
