@@ -8,7 +8,7 @@ This repository contains the code and data analysis for the Vooyai project, an A
 Geolocation for all the different destinations recommended by Vooyai.
 
 
-## I will try to regularly update this repository with new analyses and insights
+## I will try to regularly update this repository with new analysis and insights
 
 
 
